@@ -27,6 +27,10 @@ html {
   text-align: center;
 }
 
+.container{
+  display: none;
+}
+
 .button {
   border-radius: 4px;
   background-color: #4a4a4a;
@@ -221,17 +225,25 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 470px) {
   #sign-up-section {
     height: 20rem;
   }
 
   #sign-up-cta h1 {
     font-size: 2.25rem;
+    max-width: auto;
   }
 
   #sign-up-cta h2 {
     font-size: 2rem;
+    width: auto;
+  }
+  .container{
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -325,6 +337,7 @@ header .mobile {
   }
   .feature .content{
     margin: 0;
+    height: auto;
   }
 }
 
